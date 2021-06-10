@@ -11,6 +11,7 @@ function App() {
   useEffect(()=>{
     const newTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY, todos));
     setTodos(newTodos)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[]) 
 
   useEffect(() => {
